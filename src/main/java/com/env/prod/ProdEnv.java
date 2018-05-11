@@ -5,38 +5,33 @@ import org.springframework.stereotype.Component;
 
 import com.jcg.prop.GenericEnv;
 
-/**
- * @author ashraf
- *
- */
 @Component
 public class ProdEnv implements GenericEnv {
 
-	private String envName = "prod";
+    private String envName = "prod";
 
-	@Value("${profile.name}")
-	private String profileName;
+    @Value("${profile.name}")
+    private String profileName;
 
-	public String getEnvName() {
-		return envName;
-	}
+    public String getEnvName() {
+        return envName;
+    }
 
-	public void setEnvName(String envName) {
-		this.envName = envName;
-	}
+    public void setEnvName(String envName) {
+        this.envName = envName;
+    }
 
-	public String getProfileName() {
-		return profileName;
-	}
+    public String getProfileName() {
+        return profileName;
+    }
 
-	public void setProfileName(String profileName) {
-		this.profileName = profileName;
-	}
+    public void setProfileName(String profileName) {
+        this.profileName = profileName;
+    }
 
-	@Override
-	public String toString() {
-		return "ProdEnv [envName=" + envName + ", profileName=" + profileName
-				+ "]";
-	}
+    @Override
+    public String toString() {
+        return "ProdEnv [envName=" + envName + ", profileName=" + profileName + "]";
+    }
 
 }

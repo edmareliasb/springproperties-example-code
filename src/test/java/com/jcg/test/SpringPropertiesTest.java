@@ -12,10 +12,6 @@ import com.jcg.prop.JmsProperties;
 
 import junit.framework.TestCase;
 
-/**
- * @author ashraf
- *
- */
 @RunWith(SpringJUnit4ClassRunner.class)
 // Change it to your desired profile
 // @ActiveProfiles(profiles = "test")
